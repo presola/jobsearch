@@ -34,6 +34,8 @@ Note that, distance and duration between selected job and user's location will n
 
 Run `ng serve  --proxy-config proxy.conf.json` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+To run as a PWA , `ng set apps.0.serviceWorker=true`
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
@@ -41,7 +43,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-The dist/ folder can be served on any server directly without running node.
+
 
 ## Running unit tests
 
