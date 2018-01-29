@@ -1,7 +1,8 @@
 # Job Search Sample Application
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
-It's a project that shows users a list of jobs on CareerJet's public API and also allows job search,
+
+It's a project that shows users a list of jobs on CareerJet's public API and allows for job search,
 it also shows user's selected job on a map with job's location and distance to user.
 
 ## Prototype
@@ -28,6 +29,8 @@ To Run, Get a google api key by following the instructions below:
 7. Ensure you are selecting Javascript or Web(Google Maps, Google Distance Matrix, Google Places)
  
 8. Change your google's api key in /src/app/service/apicalls.service.ts
+
+Note that, distance and duration between selected job and user's location will not been shown without the correct API Key.
 
 Run `ng serve  --proxy-config proxy.conf.json` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
