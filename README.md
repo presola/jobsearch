@@ -1,6 +1,13 @@
-# TutProject
+# Job Search Sample Application
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
+It's a project that shows users a list of jobs on CareerJet's public API and also allows job search,
+it also shows user's selected job on a map with job's location and distance to user.
+
+## Prototype
+<div>
+<img src="./JobSearch.gif?raw=true" height="400" alt="Sample">
+</div>
 
 ## Development server
 
@@ -13,6 +20,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+The dist/ folder can be served on any server directly without running node.
 
 ## Running unit tests
 
