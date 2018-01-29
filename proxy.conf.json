@@ -1,0 +1,26 @@
+{
+  "/jobs": {
+    "target": "http://public.api.careerjet.net/search",
+    "secure": true,
+    "pathRewrite": {
+      "^/jobs": ""
+    },
+    "changeOrigin": true
+  },
+  "/googleplaces": {
+    "target": "https://maps.googleapis.com/maps/api/place/textsearch/json",
+    "secure": true,
+    "pathRewrite": {
+      "^/googleplaces": ""
+    },
+    "changeOrigin": true
+  },
+  "/distancematrix": {
+    "target": "https://maps.googleapis.com/maps/api/distancematrix/json",
+    "secure": true,
+    "pathRewrite": {
+      "^/distancematrix": ""
+    },
+    "changeOrigin": true
+  }
+}

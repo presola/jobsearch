@@ -1,0 +1,49 @@
+<div class="home_info">
+  <div class="row" *ngIf="error_message != ''">
+    <div class="col-md-12">
+      <div class="alert alert-danger">
+        <strong>Error!</strong> {{ error_message }}
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-12 text-center">
+      <form #jobSearchForm="ngForm" (ngSubmit)="formSubmit()">
+        <div class="form-group">
+          <label for="search">Job Title</label>
+          <input type="text" class="form-control" id="search"
+                 [(ngModel)]="model.search" required name="search"
+                 #name="ngModel">
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" class="form-control" id="location" [(ngModel)]="model.location" required name="location"
+                 #location="ngModel">
+        </div>
+
+        <button type="submit" style="width: 100%" class="btn btn-success" [disabled]="!jobSearchForm.form.valid">
+          Submit
+        </button>
+
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 job_column" *ngFor="let job of jobs">
+      <div class="card" (click)="goToMap(job)">
+        <div class="card-block">
+          <h4 class="card-title">{{job.title}}</h4>
+          <h6 class="card-subtitle mb-2 text-muted">{{job.company}} | {{job.date}} | <span class="money"><i
+            class="fa fa-money" aria-hidden="true" style="color: green;"></i>{{job.salary}}</span></h6>
+          <p class="card-text">{{job.description}}</p>
+          <div class="row bottom_info">
+            <span><i class="fa fa-map-marker" aria-hidden="true" style="color: red;"></i>{{job.locations}}</span>
+            <span class="url_link" style="right: 0"><a href="{{job.url}}" target="_blank" class="card-link"><i
+              class="fa fa-link" aria-hidden="true"></i></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

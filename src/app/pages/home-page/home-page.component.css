@@ -1,0 +1,41 @@
+.job_column {
+  margin-top: 30px;
+}
+
+.job_column .card{
+  padding: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.job_column .card .card-block .card-text{
+  max-height: 50px;
+  overflow: hidden;
+}
+
+.job_column .card .card-block .bottom_info{
+  padding: 10px;
+  font-size: 17px;
+}
+
+.job_column .card .card-block i{
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.job_column .card .card-block .bottom_info .url_link{
+  float: right;
+  position: absolute;
+  right: 10px;
+}
+
+.job_column .card .card-block .bottom_info i{
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.home_info {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+

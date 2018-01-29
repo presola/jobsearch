@@ -1,0 +1,38 @@
+#mapSection {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+
+.card{
+  padding: 10px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  bottom: 20px;
+  position: absolute;
+  margin-left: 10px;
+  margin-right: 20px;
+  width: 95%;
+}
+
+.card .card-block .bottom_info{
+  padding: 10px;
+  font-size: 17px;
+}
+
+.card .card-block i{
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.card .card-block .bottom_info .url_link{
+  float: right;
+  position: absolute;
+  right: 10px;
+}
+
+.card .card-block .bottom_info i{
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 24px;
+}
