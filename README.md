@@ -5,6 +5,7 @@ It's a project that shows users a list of jobs on CareerJet's public API and als
 it also shows user's selected job on a map with job's location and distance to user.
 
 ## Prototype
+
 <div>
 <img src="./JobSearch.gif?raw=true" height="400" alt="Sample">
 </div>
