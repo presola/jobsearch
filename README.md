@@ -6,9 +6,7 @@ it also shows user's selected job on a map with job's location and distance to u
 
 ## Prototype
 
-<div>
-<img src="./JobSearch.gif?raw=true" height="400" alt="Sample">
-</div>
+![Scheme](./JobSearch.gif)
 
 ## Development server
 
