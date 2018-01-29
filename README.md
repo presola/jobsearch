@@ -6,11 +6,30 @@ it also shows user's selected job on a map with job's location and distance to u
 
 ## Prototype
 
+![Scheme](./WebSearch.gif)
 ![Scheme](./JobSearch.gif)
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To Run, Get a google api key by following the instructions below: 
+
+1. Go to https://console.developers.google.com/apis/library
+
+2. Create a Project.
+
+3. Go to the API Library, click on credentials.
+
+4. Create an API Key.
+
+5. Go to Dashboard.
+
+6. Enable API’s for each google aspect.
+
+7. Ensure you are selecting Javascript or Web(Google Maps, Google Distance Matrix, Google Places)
+ 
+8. Change your google's api key in /src/app/service/apicalls.service.ts
+
+Run `ng serve  --proxy-config proxy.conf.json` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
